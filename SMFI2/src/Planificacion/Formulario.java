@@ -58,6 +58,4 @@ public class Formulario {
         this.paciente = paciente;
     }
     
-    
-    
 }

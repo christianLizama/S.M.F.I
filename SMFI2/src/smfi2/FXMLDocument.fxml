@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smfi2.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smfi2.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1080.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagenes/login.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="entrar" layoutX="469.0" layoutY="443.0" mnemonicParsing="false" onAction="#entrar" opacity="0.0" prefHeight="61.0" prefWidth="142.0" text="entrar" />
+      <TextField fx:id="nombreUsuario" layoutX="511.0" layoutY="306.0" prefHeight="51.0" prefWidth="215.0" style="-fx-background-color: #888a8c;" />
+      <TextField fx:id="passwordUsuario" layoutX="511.0" layoutY="376.0" prefHeight="51.0" prefWidth="215.0" style="-fx-background-color: #888a8c;" />
+   </children>
 </AnchorPane>
